@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(244, 192, 192);
+}
+
+.logo img {
+  height: 50px;
+  width: 50px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: center;
+  font-size: 1.2rem;
+  padding-top: 10px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: rgb(23, 23, 27);
+}
+
+
+.hero {
+  background-color: azure;
+  padding: 20px;
+}
+
+.hero h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 20px;
+  color: rgb(113, 66, 4);
+}
+
+
+.Sch {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.sch-env {
+  padding: 0 20px;
+}
+
+.sch-env h2,
+.sch-env h3 {
+  font-size: 1.4rem;
+  color: rgb(4, 4, 136);
+  padding-top: 10px;
+}
+
+.sch-env p {
+  padding-top: 15px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.sch-env ul {
+  padding-top: 10px;
+  padding-left: 20px;
+  list-style: disc;
+}
+
+.responsive-img,
+.Sch img,
+.logo img,
+.footer .logo img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.call-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: 20px;
+}
+
+.call-btn button {
+  background-color: rgb(171, 163, 163);
+  height: 50px;
+  width: 90%;
+  max-width: 300px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.footer {
+  background-color: rgb(203, 148, 148);
+  text-align: center;
+  padding: 15px;
+}
+
+.footer a {
+  display: inline-block;
+  margin: 10px;
+  color: black;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  border: 1px solid black;
+}
+
+.social-links {
+  padding: 10px;
+  border-bottom: 1px solid white;
+}
+
+
+
+@media (min-width: 768px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    padding-right: 55%;
+    gap: 20px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .Sch {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .sch-env {
+    flex: 1;
+    padding: 0 30px;
+  }
+
+  .Sch img {
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .call-btn button {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .sch-env h2,
+  .sch-env h3 {
+    font-size: 1.6rem;
+  }
+
+  .call-btn button {
+    font-size: 1.2rem;
+    max-width: 250px;
+  }
+}
